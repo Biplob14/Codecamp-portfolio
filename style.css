@@ -29,6 +29,7 @@ header {
     left: 0;
     width: 100%;
     background: var(--main-red);
+    z-index: 10;
 }
 
 .menus {
@@ -86,7 +87,7 @@ header {
 #projects {
     height: 100vh;
     background-color: var(--background-ash);
-    padding: 50px 10px;
+    padding: 90px 10px;
 }
 
 .grid-title {
@@ -101,17 +102,112 @@ header {
     margin: 0 auto;
     overflow: hidden;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    /* justify-content: center; */
 
 }
 
 .project-box {
-    width: 30%;
-
+    position: relative;
+    width: 30vw;
 }
 
 .project-box img {
-    width: 350px;
+    display: block;
+    width: 100%;
     height: auto;
+    text-align: center;
+    
+}
+
+.project-box .project-tile {
+    background-color: #242426;
+    width: 100%;
+    text-align: center;
+    padding: 20px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.project-box .project-tile a {
+    color: var(--txt-white);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.code {
+    color: red;
+    font-size: 2rem;
+    padding: 0 15px;
+    transition: color .3s ease-in-out;
+}
+
+.project-box .project-tile:hover .code{
+    color: white;
+}
+
+.show-all {
+    width: 100%;
+    text-align: center;
+}
+
+.show-all a {
+    text-decoration: none;
+    color: var(--txt-white);
+    background: #242426;
+    font-size: 1.2rem;
+    padding: 12px 10px;
+    border-radius: 6px;
+    transition: .3s ease-out;
+}
+
+.show-all a:hover {
+    background: var(--main-red);
+}
+
+.contact-section {
+    height: 50vh;
+    padding: 50px 10px;
+    text-align: center;
+    background: #242426;
+}
+
+.contact-section h2 {
+    font-size: 3.5rem;
+    color: var(--txt-white);
+    margin-bottom: 20px;
+}
+
+.contact-section>p {
+    color: var(--txt-white);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+    margin: 0 20%;
+}
+
+.social-links ul li a{
+    color: white;
+}
+
+.before-footer {
+    border: 1px solid red;
+}
+footer {
+    background: #242426;
+    color: white;
+    height: 10vh;
+}
+
+.ftr {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
