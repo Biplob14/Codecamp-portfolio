@@ -1,0 +1,117 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* variables initialization */
+:root {
+    --main-red: #be3144;
+    --txt-white: #f0f0f0;
+    --hover-ash: #6e6996;
+    --background-ash: #45567D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+}
+
+.menus {
+    margin-right: 7%;
+}
+
+.menus ul {
+    display: flex;
+}
+
+.menus ul li {
+    list-style: none;
+    padding: 25px 20px;
+}
+
+.menus ul li:hover {
+    background: var(--hover-ash);
+}
+
+.menus ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--txt-white);
+}
+
+.container {
+    /* width: 75%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #242426;
+}
+
+.intro-text h1{
+    color: var(--txt-white);
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.intro-text p {
+    color: var(--main-red);
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+#projects {
+    height: 100vh;
+    background-color: var(--background-ash);
+    padding: 50px 10px;
+}
+
+.grid-title {
+    color: var(--txt-white);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    
+}
+
+.project-grid {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.project-box {
+    width: 30%;
+
+}
+
+.project-box img {
+    width: 350px;
+    height: auto;
+}
